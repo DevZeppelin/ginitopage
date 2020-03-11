@@ -155,6 +155,7 @@ h3 {
 #sobre-mi .texto {
     
     width: 42%;
+    text-align: justify;
 }
 
 
@@ -479,6 +480,9 @@ span {
 
 
    /*en el medio que se va a ver esta pag sera con un ancho maximo de 800 px (suficiente para tablets como para fonos) si es solo para celus le ponemos 480px. */
+  
+  
+  
    @media (max-width: 800px) {
 
    
@@ -513,9 +517,9 @@ span {
     }
 
     header h1 {
-            font-size: 50px;
+            font-size: 65px;
             margin-bottom: 25px;
-            padding-bottom: 35px;
+            padding-bottom: 75px;
             -webkit-text-stroke: 1px royalblue;
     }
     
@@ -545,6 +549,7 @@ span {
 
     #sobre-mi img {
         width: 100%;
+        height: 250px;
     }
 
     #sobre-mi .texto {
@@ -619,6 +624,12 @@ span {
     .contacto-info {
         flex-direction: column;
     }
+
+    #whatsapp img {
+
+        width: 40px;
+        height: 40px;
+    }
 /*
     .contenedor-titulo h1 {
         -webkit-text-stroke: 0.01cm white;
@@ -630,7 +641,43 @@ span {
 
 /*AHORA LO VAMOS A CONFIGURAR PARA IPAD Y TABLETS*/
 /*al ponerle un miniom me aseguro que no va a ser un celular*/
-  @media (min-width: 600px) and (max-width: 800px) {
+
+@media (max-width: 330px) {
+
+    
+
+    header h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+        padding-bottom: 113px;
+        -webkit-text-stroke: 1px royalblue;
+    }
+
+    .contenedor-titulo h2 {
+
+        font-size: 25px;
+    }
+
+    #whatsapp img {
+
+        width: 30px;
+        height: 30px;
+    }
+
+    #sobre-mi img {
+
+        height: 250px;
+    }
+
+
+
+
+
+
+
+}
+  
+@media (min-width: 600px) and (max-width: 800px) {
 
     header {
         height: 70vh;
@@ -638,6 +685,7 @@ span {
 
     header h1 {
         margin-bottom: 213px;
+        font-size: 90px;
     }
 
     .contenedor-servicios {
@@ -652,5 +700,7 @@ span {
         width: 70%;
         margin: auto;
     }
+
+
 
   }
