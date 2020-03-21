@@ -3,7 +3,11 @@
 body{
     /*siempre es bueno poner el margin 0 al principio para quitar los amrgenes que vienen por defecto que nos ocupan lugar al dope*/
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 19px;
+    background-color: rgb(11, 21, 49);
+    color: rgb(103, 171, 202);
+    
 }
 
 header .contenedor{
@@ -19,13 +23,16 @@ header .contenedor{
 /*debo llamar a la etiqueta padre para ordenar los elementos de la lista. le tengo que poner clase al ul, el display flex lo que hizo fue poner un item al aldo del otro en vez de uno arriba del otro.*/
 
 
-.lista-menu {
-    color: #001;
+.lista-menu a {
+    color: rgb(4, 42, 114);
+   
 }
+
+
 
 header ul {
     display: flex;
-    color: white;
+    /*color: white;*/
     text-decoration: solid;  
 }
 
@@ -79,6 +86,8 @@ header {
     background-size: cover;
   
 
+
+   
 }
 
 h1 {
@@ -141,6 +150,7 @@ h3 {
     text-align: center;
     font-size: 55px;
     font-weight: bold;
+    color: rgb(79, 160, 235);
     /*margin-top: 100px;    */
 }
 
@@ -208,7 +218,7 @@ h3 {
     /*en google pongo linear gradient css y me sale para armarlo ahi*/
     background: linear-gradient(to top, #0D0D0D,#1D64F2);
     /*en google pongo box shadow generator y lo configuro ahi*/
-    box-shadow: 0 12px 30px 0 #242326;
+    box-shadow: 0 12px 30px 0 #5b09ff;
 }
 
 .ondas {
@@ -217,6 +227,7 @@ h3 {
     /*como sabe la imagen wave donde es el 0? porque le pose position : relative a la clase servicio que es la que tiene la position relative*/
     left: 0;
     bottom: 0;
+    width: 100%;
 
 }
 
@@ -285,10 +296,7 @@ span {
 
 /*.........................SAECCION BLOG.............................*/
 
-#blog {
 
-    background: #F9FAFC;
-}
 
 #blog .contenedor-publicaciones {
 
@@ -300,7 +308,7 @@ span {
 
     width: 30%;
     /*recordar que la sombre la puedo generar en la pag*/
-    box-shadow: 1px 1px 14px #ccc;
+    box-shadow: 1px 1px 14px rgb(75, 62, 255);
 }
 
 #blog img {
@@ -308,8 +316,10 @@ span {
 }
 
 #blog .contenido {
-    background: #FFF;
+    background: rgb(8, 87, 133);
     padding: 20px;
+    height: 92%;
+    color: white;
 }
 
 #blog h4 {
@@ -319,7 +329,7 @@ span {
 }
 
 #blog p {
-    color: #5A6169;
+    color: rgb(142, 164, 189);
     line-height: 24px;
     font-size: 16px;
 }
@@ -331,7 +341,7 @@ span {
 /*...............................SECCION QUE ESPERAS....................................*/
 
 #que-esperas{
-    background: linear-gradient(#0D0D0D, #1D64F2);
+    background: linear-gradient(rgb(69, 128, 255), rgb(16, 79, 206));
     text-align: center;
     /*aqui le pongo 50px de espacio arriba y abajo. 0 a los costados*/
     padding: 50px 0;
@@ -356,6 +366,7 @@ span {
     width: 77%;
     /*como centrarlo??? margin: auto*/
     margin: auto;
+    
  }
 
  input[type="text"], input[type="email"] {
@@ -365,6 +376,8 @@ span {
      border: 0;
      border-bottom: 2px solid #5cb8ff;
      font-size: 17px;
+     background-color: transparent;
+     
  } 
 
  textarea {
@@ -374,6 +387,8 @@ span {
      font-size: 17px;
      margin-bottom: 40px;
      width: 100%;
+     background-color: transparent;
+    
  }
 
  /*EL BOTON LO AGREGO EN LA PARTE DE BOTONES*/
@@ -381,9 +396,11 @@ span {
  #contacto input[type="submit"] {
      width: 166px;
      margin: auto;
+     
 
  }
 
+ 
   .contacto-info {
 
     display: flex;
@@ -408,7 +425,7 @@ span {
 
    footer {
 
-    background: #2f2f2f;
+    background: #0d3b6e;
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
@@ -487,6 +504,11 @@ span {
 
    
 
+    .lista-menu a {
+        color: rgb(255, 255, 255);
+    }
+
+
     .menu-icon {
         /*es lo contrario al display none*/
         display: block;
@@ -501,14 +523,15 @@ span {
         position: absolute;
         top: 83px;
         left: 0;
-        height: 350px;
-        background: #4a8abb;
+        height: 380px;
+        background: rgb(3, 125, 196);
         width: 100%;
         display: none;
     }
 
     header nav ul {
         flex-direction: column;
+        color: white;
     }
 
     header nav ul li {
@@ -618,7 +641,7 @@ span {
     }
 
     .lista-menu li a {
-        color: white;
+        color: rgb(245, 247, 250);
     }
 
     .contacto-info {
@@ -647,7 +670,7 @@ span {
     
 
     header h1 {
-        font-size: 35px;
+        font-size: 44px;
         margin-bottom: 25px;
         padding-bottom: 113px;
         -webkit-text-stroke: 1px royalblue;
@@ -662,11 +685,16 @@ span {
 
         width: 30px;
         height: 30px;
+        top: 86%;
     }
 
     #sobre-mi img {
 
         height: 250px;
+    }
+
+    .lista-menu li {
+        font-size: 14px;
     }
 
 

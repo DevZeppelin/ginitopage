@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos.css">
      <!--rel es la relación. stylesheet significa hoja de estilo, esa es su relación. y donde está? en href-->
 
-     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
      <!--la fuente la descargo de google font. ahi me da los codigos para pegar en el html y en el css-->
      <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
         <div class="menu">
             <div class="contenedor" >
                 <p class="logo"><a href="#top-id" style="color: white;">Gino Pietrobon</a></p>
-                <body link="#000" vlink="#000" alink="#000"></body>
+                <body link="rgb(0, 62, 179)" vlink="rgb(0, 62, 185)" alink="rgb(0, 62, 195)"></body>
 
                 <!--este es el icono para cuando achico la pantalla para moviles-->
                 <img class="menu-icon" src="imagenes/rayitas.png"></img>
@@ -214,8 +214,9 @@
 
                 <div class="owl-carousel owl-theme">
                     <div class="item"><img src="imagenes/ejemplos trabajos/mimate.png"><p>Mimate Web</p></div>
-                    <div class="item"><img src="imagenes/ejemplos trabajos/ej02.jpg"><p>Ejemplo 01</p></div>
-                    <div class="item"><img src="imagenes/ejemplos trabajos/ej01.jpg"><p>Ejemplo 02</p></div>
+                    <div class="item"><img src="imagenes/ejemplos trabajos/powersis.png"><p>Powersis tecnología</p></div>
+                    <div class="item"><img src="imagenes/ejemplos trabajos/stepy.png"><p>Stepy</p></div>
+                    <div class="item"><img src="imagenes/ejemplos trabajos/ginitopage.png"><p>¡Esta pag!</p></div>
                     
                     
                 </div>
@@ -238,7 +239,7 @@
                         <ul>
                             <li><img src="imagenes/velocidad.png"></li>
                             <li>Velocidad</li>
-                            <li>MConsidero la importancia de que tu sitio cargue velozmente, optimizando el valioso tiempo de los usuarios.</li>
+                            <li>Considero la importancia de que tu sitio cargue velozmente, optimizando el valioso tiempo de los usuarios.</li>
                         </ul>
                     </div>
 
@@ -415,23 +416,26 @@
                 $(".menu").css({"position":"fixed"});
                 $(".menu").css({"width":"100%"});
                 $(".menu").css({"top":"0"});
-                $(".menu").css({"background":"#fff"});
-                $(".menu a").css({"color":"#000"});
-                $(".logo a").css({"color":"#000"});
+                $(".menu").css({"background":"rgb(3, 125, 196)"});
+                $(".menu a").css({"color":"#fff"});
+                $(".logo a").css({"color":"#fff"});
                 $(".menu").css({"box-shadow":"rgba(0,0,0,0.22) 6px 1px 1px"});
                 //el z index viene por defecto en 1, pero mientras mas grande el num mas por delante estara el elemento
                 $(".menu").css({"z-index":"100"});
 
 
-            }   else {
+            }
+            
+            else {
                 //cuando no hay scroll o scroll es para arriba y no para abajo
                 $(".menu").css({"position":"relative"});
                 $(".menu").css({"background":"transparent"});
                 $(".menu").css({"box-shadow":"0 0 0"});
-                
-                $(".menu a").css({"color":"#000"});
-                $(".logo a").css({"color":"#fff"});
 
+                                
+                $(".menu a").css({"color":"rgb(4, 42, 114)"});
+                $(".logo a").css({"color":"#fff"});
+                        
             }
 
 
@@ -442,13 +446,18 @@
 
         $('.menu-icon').click(function(){
             //SlideDown baja el menu, SlideUp levanta el menu, SlideToggle es una combinacion
-            $('header nav').slideToggle();    
-        })
+            $('header nav').slideToggle(); 
 
-        $('.menu a').click(function(){
+            $('.menu a').click(function(){
             $('header nav').slideUp();
+            })
 
         })
+
+        //$('.menu a').click(function(){
+          //  $('header nav').slideUp();
+
+        //})
 
         })
 
