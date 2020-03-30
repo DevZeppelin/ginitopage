@@ -370,6 +370,7 @@ span {
  }
 
  input[type="text"], input[type="email"] {
+     color: #fff;
      width: 49%;
      margin-bottom: 15px;
      padding: 18px 0;
