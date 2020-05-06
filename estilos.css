@@ -222,7 +222,7 @@ h3 {
     font-size: 16px;
     margin-bottom: 40px;
     /*aca defino que todos los parrafos tengan el mismo alto para que los iconos queden alineados*/
-    height: 200px;
+    height: 150px;
 }
 
 .contenedor-servicios .violeta {
@@ -254,7 +254,7 @@ h3 {
     left: 0;
     bottom: 0;
     width: 100%;
-
+    opacity: 0.35;
 }
 
 .icono {
