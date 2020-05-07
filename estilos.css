@@ -222,7 +222,7 @@ h3 {
     font-size: 16px;
     margin-bottom: 40px;
     /*aca defino que todos los parrafos tengan el mismo alto para que los iconos queden alineados*/
-    height: 130px;
+    height: 115px;
 }
 
 .servicio a {
@@ -639,7 +639,7 @@ span {
     #servicios .servicio {
 
         width: 81%;
-        padding-bottom: 60px;
+        
     }
 
     #servicios .ondas {
