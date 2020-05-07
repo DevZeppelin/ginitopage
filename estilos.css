@@ -199,7 +199,7 @@ h3 {
 
     width: 24%;
     /*el padding es para aumentar el tamaño interno del elemento*/
-    padding: 34px 30px 60px 30px;
+    padding: 32px 25px 40px 25px;
     /*top - right - bottom - left.. siempre en sentido horario*/
     
     /*es el redonde de las puntas*/
@@ -222,7 +222,12 @@ h3 {
     font-size: 16px;
     margin-bottom: 40px;
     /*aca defino que todos los parrafos tengan el mismo alto para que los iconos queden alineados*/
-    height: 150px;
+    height: 130px;
+}
+
+.servicio a {
+
+    color: white;
 }
 
 .contenedor-servicios .violeta {
@@ -344,6 +349,7 @@ span {
 
 #blog img {
     width: 100%;
+    height: 160px;
 }
 
 
